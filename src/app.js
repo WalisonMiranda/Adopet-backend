@@ -15,6 +15,7 @@ import fotoRoutes from './routes/fotoRoutes';
 const whitelist = [
   'http://localhost:3000',
   'https://adopet-w.vercel.app/',
+  'adopet-walisonmiranda.vercel.app',
 ];
 
 const corsOptions = {
