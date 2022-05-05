@@ -5,7 +5,7 @@ import User from '../models/User';
 import Foto from '../models/Foto';
 
 const models = [User, Pet, Foto];
-
+console.log(databaseConfig);
 const connection = new Sequelize(databaseConfig);
 
 models.forEach((model) => model.init(connection));
