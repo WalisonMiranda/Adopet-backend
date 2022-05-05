@@ -16,6 +16,7 @@ const whitelist = [
   'http://localhost:3000',
   'https://adopet-w.vercel.app',
   'https://adopet-walisonmiranda.vercel.app',
+  'https://adopet-nnpsicu4k-walisonmiranda.vercel.app',
 ];
 
 const corsOptions = {
