@@ -9,7 +9,7 @@ import helmet from 'helmet';
 import homeRoutes from './routes/homeRoutes';
 import tokenRoutes from './routes/tokenRoutes';
 import userRoutes from './routes/userRoutes';
-import alunoRoutes from './routes/petRoutes';
+import petRoutes from './routes/petRoutes';
 import fotoRoutes from './routes/fotoRoutes';
 
 const whitelist = [
@@ -49,7 +49,7 @@ class App {
     this.app.use('/', homeRoutes);
     this.app.use('/tokens/', tokenRoutes);
     this.app.use('/users/', userRoutes);
-    this.app.use('/pets/', alunoRoutes);
+    this.app.use('/pets/', petRoutes);
     this.app.use('/fotos/', fotoRoutes);
   }
 }
