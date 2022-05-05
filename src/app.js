@@ -13,10 +13,11 @@ import alunoRoutes from './routes/petRoutes';
 import fotoRoutes from './routes/fotoRoutes';
 
 const whitelist = [
-  'http://localhost:3000',
-  'https://adopet-w.vercel.app',
-  'https://adopet-walisonmiranda.vercel.app',
-  'https://adopet-nnpsicu4k-walisonmiranda.vercel.app',
+  '*',
+  // 'http://localhost:3000',
+  // 'https://adopet-w.vercel.app',
+  // 'https://adopet-walisonmiranda.vercel.app',
+  // 'https://adopet-nnpsicu4k-walisonmiranda.vercel.app',
 ];
 
 const corsOptions = {
