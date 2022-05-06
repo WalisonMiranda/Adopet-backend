@@ -1,8 +1,8 @@
 require('dotenv').config();
 
 module.exports = {
-  dialect: 'sqlite',
-  storage: '../../database.sqlite',
+  dialect: 'postgres',
+  host: process.env.DB_HOST,
 
   define: {
     timestamps: true,
