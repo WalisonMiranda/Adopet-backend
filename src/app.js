@@ -12,22 +12,9 @@ import userRoutes from './routes/userRoutes';
 import alunoRoutes from './routes/petRoutes';
 import fotoRoutes from './routes/fotoRoutes';
 
-const whitelist = [
-  'https://adopet-w.vercel.app/',
-  'https://adopet-walisonmiranda.vercel.app/',
-  'https://adopet-nnpsicu4k-walisonmiranda.vercel.app/',
-  'https://adopet-git-master-walisonmiranda.vercel.app/',
-];
-
 const corsOptions = {
-  origin(origin, callback) {
-    if (whitelist.indexOf(origin) !== -1 || !origin) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
-};
+  origin: '*',
+}
 
 class App {
   constructor() {
